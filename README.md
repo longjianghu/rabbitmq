@@ -8,4 +8,4 @@ docker build -t longjianghu/rabbitmq:3.9.13 ./
 
 # 运行
 
-docker run --name rabbitmq -v /data/var/lib/rabbitmq:/var/lib/rabbitmq -p 5672:5672 -p 15672:15672 -m 300M --restart=always -d longjianghu/rabbitmq:3.9.13
+docker run --name rabbitmq -v /data/var/lib/rabbitmq:/var/lib/rabbitmq -p 5672:5672 -p 15672:15672 --restart=always -d longjianghu/rabbitmq:3.9.13
